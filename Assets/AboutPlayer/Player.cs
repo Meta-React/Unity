@@ -152,8 +152,7 @@ public class Player : MonoBehaviour
         if (action.Contains("S")) webMoveDir += Vector3.back;
         if (action.Contains("A")) webMoveDir += Vector3.left;
         if (action.Contains("D")) webMoveDir += Vector3.right;
-        // Web側から "SPACE" が送られてきた場合ジャンプさせる
-        if (action.Contains("SPACE"))
+        if (action.Contains("JUMP"))
         {
             jumpRequested = true;
         }
